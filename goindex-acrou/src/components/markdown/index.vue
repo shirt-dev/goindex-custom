@@ -10,7 +10,6 @@
 
 <script>
 import marked from "marked";
-import bandupan from "./plugin/baidupan";
 import { ComponentsMarkdownBase } from "@api/components.markdown";
 export default {
   name: "markdown",
@@ -29,12 +28,6 @@ export default {
       type: Boolean,
       required: false,
       default: false,
-    },
-    // 百度网盘分享链接特殊样式
-    baidupan: {
-      type: Boolean,
-      required: false,
-      default: true,
     },
   },
   data() {
@@ -82,13 +75,6 @@ export default {
     },
     marked(data) {
       const renderer = new marked.Renderer();
-      renderer.blockquote = (quote) => {
-        // 百度网盘
-        return (
-          (this.baidupan && bandupan(quote, this.$baseUrl)) ||
-          `<blockquote>${quote}</blockquote>`
-        );
-      };
       return marked(data, {
         renderer,
       });
@@ -105,55 +91,6 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-}
-// 百度云
-$baidupanHeight: 30px;
-$baidupanPadding: 10px;
-.baidupan {
-  overflow: hidden;
-  margin-bottom: 16px;
-  .container {
-    height: $baidupanHeight + 2 * $baidupanPadding;
-    border-radius: 4px;
-    border: 1px solid #dfe2e5;
-    padding: $baidupanPadding;
-    float: left;
-    cursor: pointer;
-    &:hover {
-      border: 1px solid purple;
-      .line {
-        background-color: purple;
-      }
-    }
-    .icon {
-      float: left;
-      height: $baidupanHeight;
-      text-align: center;
-      width: 40px;
-      margin-right: $baidupanPadding;
-      img {
-        width: 40px;
-      }
-    }
-    .url {
-      float: left;
-      height: $baidupanHeight;
-      line-height: $baidupanHeight;
-      color: purple;
-    }
-    .line {
-      float: left;
-      height: $baidupanHeight + 2 * $baidupanPadding;
-      width: 1px;
-      margin: -$baidupanPadding $baidupanPadding;
-      background-color: #dfe2e5;
-    }
-    .pwd {
-      float: left;
-      height: $baidupanHeight;
-      line-height: $baidupanHeight;
-    }
   }
 }
 </style>
