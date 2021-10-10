@@ -6,14 +6,9 @@
           <div class="tags has-addons">
             <a
               class="tag is-dark"
-              href="https://github.com/Aicirou/goindex-theme-acrou"
-            >goindex-theme-acrou</a>
-            <span class="tag is-light">
-              MIT &nbsp;
-              <span class="icon">
-                <i class="fa fa-github"></i>
-              </span>
-            </span>
+              href="https://discord.gg/QBvKEJZ"
+              target="_blank"
+            >Discord</a>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ var authConfig = {
     },
     {
       id: "root",
-      name: "dist-setting-js",
+      name: "PriveDrive",
       pass: "",
     },
     {
