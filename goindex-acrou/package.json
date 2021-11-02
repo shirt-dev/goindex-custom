@@ -14,6 +14,7 @@
     "axios": "^0.19.2",
     "bulma": "^0.8.2",
     "bulma-divider": "^0.2.0",
+    "bulma-dracula": "^1.1.1",
     "cache-loader": "^4.1.0",
     "clipboard": "^2.0.6",
     "core-js": "^3.6.4",

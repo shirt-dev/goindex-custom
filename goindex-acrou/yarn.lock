@@ -2002,10 +2002,22 @@
   "resolved" "https://registry.npm.taobao.org/bulma-divider/download/bulma-divider-0.2.0.tgz"
   "version" "0.2.0"
 
+"bulma-dracula@^1.1.1":
+  "integrity" "sha512-iG1cbzAhJF4QgfIYErxpXal4aQhoCctTjgc/qvXsIcHOvwqhrXh4/m5I4XsVpepV5JgQmoYAkkiFy/24+QjLuQ=="
+  "resolved" "https://registry.npmjs.org/bulma-dracula/-/bulma-dracula-1.1.1.tgz"
+  "version" "1.1.1"
+  dependencies:
+    "bulma" "^0.9.0"
+
 "bulma@^0.8.2":
   "integrity" "sha1-XZKPFu1KhFScKHP5XJLDjGnGMac="
   "resolved" "https://registry.npm.taobao.org/bulma/download/bulma-0.8.2.tgz"
   "version" "0.8.2"
+
+"bulma@^0.9.0":
+  "integrity" "sha512-0d7GNW1PY4ud8TWxdNcP6Cc8Bu7MxcntD/RRLGWuiw/s0a9P+XlH/6QoOIrmbj6o8WWJzJYhytiu9nFjTszk1g=="
+  "resolved" "https://registry.npmjs.org/bulma/-/bulma-0.9.3.tgz"
+  "version" "0.9.3"
 
 "bytes@3.0.0":
   "integrity" "sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg="
