@@ -49,6 +49,10 @@ body {
   width: 100%;
   table-layout: fixed;
 
+  thead {
+    background-color: transparent !important;
+  }
+
   th,
   td {
     border: 0 !important;
@@ -143,16 +147,20 @@ body {
 }
 
 .caret-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  height: 34px;
-  width: 24px;
-  vertical-align: middle;
-  cursor: pointer;
-  overflow: initial;
-  position: relative;
+  display: none;
 }
+
+// .caret-wrapper {
+//   display: inline-flex;
+//   flex-direction: column;
+//   align-items: center;
+//   height: 34px;
+//   width: 24px;
+//   vertical-align: middle;
+//   cursor: pointer;
+//   overflow: initial;
+//   position: relative;
+// }
 
 .sort-caret.ascending {
   border-bottom-color: #c0c4cc;
